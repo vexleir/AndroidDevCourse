@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -31,9 +32,21 @@
         android:id="@+id/button"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@android:color/background_light"
-        android:layout_marginBottom="141dp"
+        android:layout_marginBottom="62dp"
         android:width="200dp"
+        android:onClick="clickFunction"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="clickFunction" />
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/kylo1"
+        android:id="@+id/myImage"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_alignBottom="@+id/textField"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 </RelativeLayout>

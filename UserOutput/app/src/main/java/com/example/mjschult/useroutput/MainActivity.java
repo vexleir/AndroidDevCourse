@@ -1,19 +1,26 @@
 package com.example.mjschult.useroutput;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view) {
 
-        Toast.makeText(getApplicationContext(), "Hi Matt", Toast.LENGTH_LONG).show();
-        EditText myTextField = (EditText) findViewById(R.id.textField);
-        Log.i("Textfield Value", myTextField.getText().toString());
+
+        //EditText myTextField = (EditText) findViewById(R.id.textField);
+        ImageView kyloImage = (ImageView) findViewById(R.id.myImage);
+
+        // kyloImage.setImageDrawable(getResources().getDrawable(R.drawable.kylo2, getApplicationContext().getTheme()));
+        kyloImage.setImageResource(R.drawable.kylo2);
+
+        //Toast.makeText(getApplicationContext(), "Hi " + myTextField.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
     @Override
